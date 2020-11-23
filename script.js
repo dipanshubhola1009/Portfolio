@@ -6,6 +6,7 @@ function darkmode(){
    document.getElementById("bulb").src = "https://img.icons8.com/ultraviolet/50/000000/reflector-bulb.png" ;
    document.getElementById("body").style.backgroundColor = "black";
    document.getElementById("body").style.color = "#ffebcd";
+   document.getElementById("nav").style.backgroundColor ="black";
    for(var i = 0 ; i < document.getElementsByTagName("button").length ; i++){
      document.getElementsByTagName("button").item(i).style.color = "#ffebcd";
      document.getElementById("MenuDark").style.backgroundColor="#ffebcd";
@@ -19,6 +20,7 @@ function darkmode(){
    document.getElementById("bulb").src = "https://img.icons8.com/office/50/000000/reflector-bulb.png" ;
    document.getElementById("body").style.backgroundColor = "white";
    document.getElementById("body").style.color = "black";
+   document.getElementById("nav").style.backgroundColor ="white";
    for(var i = 0 ; i < document.getElementsByTagName("button").length ; i++){
      document.getElementsByTagName("button").item(i).style.color = "black";
    }
