@@ -236,9 +236,10 @@
           width: 90%;
         }
         .flex-1{
-          font-size: .7em;
+          font-size: 12px;
           padding: 3px 3%;
           font-weight: 600;
+          line-height: 20px;
         }
         .flex{
           flex-direction: column;
