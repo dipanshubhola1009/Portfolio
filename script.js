@@ -14,6 +14,9 @@ function darkmode(){
    for(var i = 0 ; i < document.getElementsByTagName("a").length ; i++){
      document.getElementsByTagName("a").item(i).style.color = "#ffebcd";
    }
+   for(var i = 0 ; i < document.getElementsByTagName("p").length ; i++){
+     document.getElementsByTagName("p").item(i).style.color = "#ffebcd";
+   }
    
    }
    else{
