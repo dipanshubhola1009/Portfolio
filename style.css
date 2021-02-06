@@ -264,9 +264,10 @@
           margin: 10px 30%;
         }
         .Skills{
-          display: -webkit-box;
+          display: flex;
           flex-direction: column;
           flex-wrap: wrap;
+          flex-flow: wrap
         }
         .Skills > div {
           width: 40%;
@@ -279,9 +280,10 @@
           font-size: 14px;
         }
         footer{
-          flex-wrap: wrap;
           flex-direction: column;
-          display: -webkit-box;
+          display: flex;
+          flex-flow: wrap
+
         }
         footer > div {
           width: 40%;
