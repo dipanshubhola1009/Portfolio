@@ -33,6 +33,7 @@
         }
         #nav{
           background-color: white;
+          box-shadow: 2px 2px 1px rgba(152, 147, 228, 0.562);
         }
         
         .Img-Main {
@@ -72,7 +73,37 @@
         .About {
           margin-top: 50px;
           display: flex;
-          
+          font-size: 12px;
+          line-height: 30px;
+        }
+     
+        .Skills-Head{
+          font-family: 'Yanone Kaffeesatz', sans-serif;
+          font-size: 54px !important;
+          margin: 3%;
+        }
+        .Skills{
+          width: 100%;
+          padding: 1% 0%;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: flex-start;
+        }
+
+        .Skills > div {
+          width: 100%;
+          margin: 0% auto;
+          padding: 3px 5px;
+        }
+
+        .Skills > div > p{
+          color: rgb(66, 49, 163);
+          font-size: 18px;
+          font-weight: 600;
+        }
+        .Skills > div > ul {
+          padding: 0;
         }
         .project{
           padding: 2% 2%;
@@ -131,6 +162,12 @@
           justify-content: center;
           align-items: center;
         }
+        .footerflex{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+        }
         .flex img{
           height: 400px;
           width: 90%;
@@ -146,8 +183,9 @@
   
       .darkmode{
         position: fixed;
+        height: 37px;
         top: 20px;
-        right: 20px;
+        right: 30px;
         background-color: transparent;
         border: none;
         outline: none;
@@ -158,13 +196,40 @@
       }
       footer{
         margin-top: 10px;
+        display: flex;
+        padding: 1% 10%;
       }
-  
+      footer > div {
+        width: 100%;
+      }
+      footer > div > ul {
+        list-style: none;
+        padding: 0%;
+      }
+      footer > div > p{
+        font-size: 18px;
+        color: rgb(41, 30, 107);
+        font-weight: 600;
+      }
+    
+      .footerImg{
+        width: 100px ;
+        height: 100px;
+        border-radius: 50%;
+        margin: 5px auto;
+      }
+  a{
+    text-decoration: none;
+    color: black;
+  }
+  hr{
+    border-top: 1px solid rgba(168, 87, 221, 0.527);
+  }
       @media(max-width: 820px){
         .darkmode{
           top: 70px;
-          right: 15px;
-          color: #ffebcd;
+          right: 25px;
+          color: #fffcf7 !important;
           z-index: 100;
         }
         .Introduction{
@@ -184,7 +249,7 @@
         .flex img{
           height: 100px;
         }
-  
+        
         .project-slide iframe{
           height: 200px;
           width: 80%;
@@ -197,6 +262,37 @@
           width: 40%;
           margin: 10px 30%;
         }
+        .Skills{
+          display: -webkit-box;
+          flex-direction: column;
+          flex-wrap: wrap;
+        }
+        .Skills > div {
+          width: 40%;
+          margin: 2% 5%;
+        }
+        .Skills > div > p{
+          font-size: 16px;
+        }
+        .Skills> div > ul{
+          font-size: 14px;
+        }
+        footer{
+          flex-wrap: wrap;
+          flex-direction: column;
+          display: -webkit-box;
+        }
+        footer > div {
+          width: 40%;
+          font-size: 14px;
+        }
+        .footerflex{
+          width: 100%;
+        }
+        .footerImg{
+          width: 50px;
+          height: 50px;
+        }
       }
-  
-  
+      
+      
