@@ -40,6 +40,12 @@
           text-align: center;
           margin-top: 30px;
           animation: LeftIn 2s;
+          padding: 5% 10% 1% 10%;
+        }
+        .Img-Main > img{
+          border-radius: 50%;
+          height: min-content;
+          border: 1px solid rgba(152, 147, 228);
         }
         .Img-Heading {
           margin-top: 30px;
@@ -74,6 +80,11 @@
           margin-top: 50px;
           display: flex;
           font-size: 12px;
+          line-height: 30px;
+        }
+
+        .About > p {
+          font-size: 16px;
           line-height: 30px;
         }
      
@@ -226,6 +237,13 @@
     border-top: 1px solid rgba(168, 87, 221, 0.527);
   }
       @media(max-width: 820px){
+        .Img-Main{
+          padding: 5% 25% 3% 25%;
+        }
+        .Img-Main > img{
+          width: 100%;
+          height: auto;
+        }
         .darkmode{
           top: 70px;
           right: 25px;
