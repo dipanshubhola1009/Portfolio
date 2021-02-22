@@ -53,6 +53,3 @@ function viewmode(){
        document.getElementById("toggle-view").innerText = "Grid View";
      }
 }
-
-
-

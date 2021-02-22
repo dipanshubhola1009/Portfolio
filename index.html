@@ -24,7 +24,7 @@
 
     <nav id="nav" class="navbar navbar-expand-lg sticky-top navbar-light">
       <div class="container">
-        <a class="navbar-brand" href="#"
+        <a class="navbar-brand" href="/"
           ><img src="./imgs/main.svg" width="50"
         /></a>
         <button
@@ -42,7 +42,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item active">
-              <a class="nav-link" href="#"
+              <a class="nav-link" href="/"
                 >Home <span class="sr-only">(current)</span></a
               >
             </li>
@@ -53,7 +53,10 @@
               <a class="nav-link" href="#Projects">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="">Contact Us</a>
+              <a class="nav-link" href="#Skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Contact">Contact Us</a>
             </li>
           </ul>
         </div>
@@ -122,12 +125,17 @@
           <a href="https://www.linkedin.com/in/dipanshubhola1009/" target="new">
             <img src="https://img.icons8.com/color/50/000000/gmail.png"/>
           </a>
-          <a href="./resume.pdf" download target="new">
-            <img src="https://img.icons8.com/office/50/000000/resume.png"/>
+        
+          <a href="https://wa.me/919034391333" target="new">
+            <img src="https://img.icons8.com/plasticine/50/000000/whatsapp.png"/>
           </a>
         </div>
         <p align="center"><i>they are few ways to connect with me</i></p>
-        
+        <div class="Resume"  >
+          <a href="./resume.pdf" download target="new">
+              <button>Download Resume</button>
+          </a>
+        </div>
       </div>
       
       <h2 class="Skills-Head" align="center">About</h2>
@@ -158,8 +166,10 @@
 
       <h2 class="Skills-Head" align="center">Skills</h2>
       <div class="Skills" id="Skills">
-
-        <div>
+         
+        <div class="SkillNode">
+          <div class="SkillCircle" ></div>
+          <div class="left">
           <p>Front-end</p>
           <ul>
             <li>
@@ -173,62 +183,90 @@
             </li>
     
           </ul>
+          </div>
+          <div></div>
         </div>
-        <div>
-          <p>Back-end</p>
-          <ul>
-            <li>
-              Node.js
-            </li>
-            <li>
-              Express.js 
-            </li>
-            <li>
-              Firebase(BASS)
-            </li>
-          </ul>
+        <div class="SkillNode">
+          <div class="SkillCircle" ></div>
+
+          <div>
+
+          </div>
+          <div class="Right">
+            <p>Back-end</p>
+            <ul>
+              <li>
+                Node.js
+              </li>
+              <li>
+                Express.js 
+              </li>
+              <li>
+                Firebase(BASS)
+              </li>
+            </ul>
+          </div>
         </div>
-        <div>
-          <p>Database</p>
-          <ul>
-            <li>
-              MongoDB
-            </li>
-            <li>
-              MySql 
-            </li>
-            <li>
-              Firebase-cloudStore
-            </li>
-          </ul>
+        <div class="SkillNode">
+          <div class="SkillCircle" ></div>
+
+              <div class="left">
+
+                <p>Database</p>
+                <ul>
+                  <li>
+                    MongoDB
+                  </li>
+                  <li>
+                    MySql 
+                  </li>
+                  <li>
+                    Firebase-cloudStore
+                  </li>
+                </ul>
+              </div>
+
+                <div>
+
+                </div>
         </div>
-        <div>
-          <p>Deployment</p>
-          <ul>
-            <li>
-              AWS
-            </li>
-            <li>
-              Heroku 
-            </li>
-            <li>
-              Netlify
-            </li>
-          </ul>
+        <div class="SkillNode">
+          <div class="SkillCircle" ></div>
+
+          <div></div>
+          <div class="Right">
+            <p>Deployment</p>
+            <ul>
+              <li>
+                AWS
+              </li>
+              <li>
+                Heroku 
+              </li>
+              <li>
+                Netlify
+              </li>
+            </ul>
+          </div>
         </div>
-        <div>
-          <p>Languages</p>
-          <ul>
-            <li>
-              Core Java with GUI
-            </li>
-            <li>
-              C
-            </li>
-            <li>
-              Python
-            </li>
-          </ul>
+        <div class="SkillNode">
+          <div class="SkillCircle" ></div>
+
+          <div class="left">
+            <p>Languages</p>
+            <ul>
+              <li>
+                Core Java with GUI
+              </li>
+              <li>
+                C
+              </li>
+              <li>
+                Python
+              </li>
+            </ul>
+          </div>
+          <div></div>
         </div>
       </div>
       <div class="Projects" id="Projects">
@@ -240,36 +278,31 @@
            <button onclick="slide(-1)"> 
               &laquo; 
             </button>
-                  <iframe src="https://blooodonor.herokuapp.com/"  ></iframe>
+            
+             <div id="ProjectSlides">
+
+             </div>
+            <!----
+             <iframe src="https://blooodonor.herokuapp.com/"  ></iframe>
                   <iframe src="https://fb-clone-52e7e.web.app/"  ></iframe>
                 <iframe src="https://yourchoice-94716.web.app/"  ></iframe>
                 <iframe src="https://person2p.herokuapp.com"  ></iframe>
                 <iframe src="https://dipanshubhola1009.github.io/covid_Tracker/"  ></iframe>
                 <iframe src="https://dipanshubhola1009.github.io/Foodzzlover/"  ></iframe>
+            -->
+             
            <button onclick="slide(1)"> &raquo; </button>
            <script>
-             var frame = 0;
-             var number = document.getElementsByTagName("iframe").length;
-             console.log(number);
-             function slide(x){
-               frame+=x;
-               if(frame>number-1){
-                 frame=0;
-               }
-               if(frame<0){
-                 frame=number-1;
-               }
-               console.log("started");
-                 for(var i= 0; i<number ; i++){
-                   document.getElementsByTagName("iframe").item(i).style.display = "none";
-                 }
-                 document.getElementsByTagName("iframe").item(frame).style.display = "block";
-             }
-             slide(0);
+            
            </script>
          </div>
+       <div id="project-grid">  
+         <div id="Dbproject" class="row">
 
-         
+         </div>
+       </div>
+     
+       <!----
        <div id="project-grid">
          <div class="row">
 
@@ -350,7 +383,7 @@
               </div>
             </div>
         </div>
-
+       --->
         <br>
         <button id="toggle-view" class="toggle" onclick="viewmode()">Grid View</button>
       </div>
@@ -358,7 +391,7 @@
    
     
     <hr>
-    <footer>
+    <footer id="Contact">
               <div class="footerflex">
                   <img src="/imgs/mypic.jpg" class="footerImg" />
                   <p>Dipanshu Bhola</p>
@@ -398,7 +431,12 @@
 
     </footer>
 
+<script src="https://www.gstatic.com/firebasejs/8.2.8/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.8/firebase-firestore.js"></script>
+
+
     <script src="./script.js"></script>
+    <script src="Dbscript.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
